@@ -1,4 +1,6 @@
 import argparse
+from litellm import completion
+translate_model = completion
 import json
 import os
 from os import environ as env
@@ -293,6 +295,7 @@ So you are close to reaching the limit. You have to choose your own value, there
         if not API_KEY:
             raise Exception("Please provide deepl key")
     elif options.model == "claude":
+        if options.model == "claude":
         API_KEY = options.claude_key or env.get("BBM_CLAUDE_API_KEY")
         if not API_KEY:
             raise Exception("Please provide claude key")
