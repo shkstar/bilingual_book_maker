@@ -119,7 +119,7 @@ def main():
         "--model",
         dest="model",
         type=str,
-        default="chatgptapi",
+        default="None",
         choices=translate_model_list,  # support DeepL later
         metavar="MODEL",
         help="model to use, available: {%(choices)s}",
